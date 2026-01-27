@@ -3,130 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanja Açaí - O Melhor de SJC</title>
+    <title>Oferta Exclusiva - Sanja Açaí</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4b0082; 
-            --secondary: #ffcc00; 
-            --cta: #28a745; 
-            --bg: #f8f9fa;
+            --roxo-acai: #4b0082;
+            --amarelo-destaque: #ffcc00;
+            --verde-sucesso: #28a745;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--bg);
-            color: #333;
-        }
-
-        .top-bar {
-            background-color: var(--primary);
-            color: white;
-            text-align: center;
-            padding: 8px;
-            font-size: 12px;
-            font-weight: bold;
+            background-color: var(--roxo-acai);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .container {
-            max-width: 450px;
-            margin: 0 auto;
-            background: #fff;
-            min-height: 100vh;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-
-        .header {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .logo {
-            font-weight: 900;
-            font-size: 26px;
-            color: var(--primary);
-            letter-spacing: -1px;
-        }
-
-        /* IMAGEM DO PRODUTO */
-        .product-banner {
             width: 100%;
-            height: 300px;
-            background-image: url('https://images.unsplash.com/photo-1590301157890-4810ed352733?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            max-width: 500px;
+            background-color: #fdfdfd;
+            color: #333;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
 
-        .price-overlay {
-            position: absolute;
-            bottom: -20px;
-            right: 20px;
-            background: #d90429;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            font-weight: 900;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            text-align: center;
+        .banner-container img {
+            width: 100%;
+            display: block;
         }
 
-        .main-content {
-            padding: 40px 20px 20px;
+        .content {
+            padding: 25px;
             text-align: center;
         }
 
         h1 {
-            font-size: 24px;
             font-weight: 900;
+            font-size: 26px;
+            color: var(--roxo-acai);
             margin-bottom: 5px;
-            color: #222;
         }
 
-        .shipping-tag {
-            color: #28a745;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-            margin-bottom: 20px;
-        }
-
-        .info-list {
-            text-align: left;
-            background: #f9f9f9;
+        .price-box {
+            background-color: #f1f1f1;
             padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border: 2px dashed var(--roxo-acai);
         }
 
-        .info-list div {
-            margin-bottom: 8px;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 16px;
         }
 
-        .info-list div::before {
-            content: "✅";
-            margin-right: 10px;
+        .new-price {
+            color: #d90429;
+            font-size: 42px;
+            font-weight: 900;
+            display: block;
         }
 
-        .btn-buy {
-            background-color: var(--cta);
-            color: white;
+        .frete-gratis {
+            color: var(--verde-sucesso);
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .cta-button {
+            background-color: var(--verde-sucesso);
+            color: #fff;
             text-decoration: none;
             display: block;
             padding: 20px;
-            border-radius: 15px;
+            border-radius: 50px;
             font-weight: 900;
             font-size: 20px;
             text-transform: uppercase;
-            box-shadow: 0 6px 0 #1e7e34;
-            transition: 0.2s;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+            margin: 25px 0;
             animation: pulse 2s infinite;
         }
 
@@ -136,62 +99,82 @@
             100% { transform: scale(1); }
         }
 
-        .payment-methods {
+        /* Selos de Segurança */
+        .security-box {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 12px;
             margin-top: 20px;
             display: flex;
-            justify-content: center;
-            gap: 15px;
-            opacity: 0.7;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid #ddd;
         }
 
-        .footer-text {
+        .security-item {
+            font-size: 10px;
+            text-align: center;
+            color: #666;
+            max-width: 80px;
+        }
+
+        .security-item img {
+            width: 30px;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            padding: 20px;
             font-size: 11px;
             color: #999;
-            margin-top: 30px;
-            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="top-bar">🔥 PROMOÇÃO EXCLUSIVA SÃO JOSÉ DOS CAMPOS</div>
-
     <div class="container">
-        <div class="header">
-            <div class="logo">SANJA AÇAÍ</div>
+        <div class="banner-container">
+            <img src="https://i.ibb.co/1tQB26xM/banner-promo-a-ai.jpg" alt="banner promo açai">
         </div>
 
-        <div class="product-banner">
-            <div class="price-overlay">
-                <small style="text-decoration: line-through; opacity: 0.8; font-size: 12px;">De R$ 45,00</small><br>
-                POR R$ 18,90
-            </div>
-        </div>
+        <div class="content">
+            <h1>Combo Gigante SJC</h1>
+            <p style="margin: 0; color: #666;">2 Copos de 700ml (1.4 Litros)</p>
 
-        <div class="main-content">
-            <h1>Combo Duplo 700ml</h1>
-            <div class="shipping-tag">🛵 FRETE GRÁTIS HOJE</div>
-
-            <div class="info-list">
-                <div><strong>2 Copos Gigantes</strong> de 700ml cada</div>
-                <div>Açaí cremoso batido na hora</div>
-                <div>Acompanhamentos inclusos</div>
-                <div><strong>Entrega rápida em SJC</strong></div>
+            <div class="price-box">
+                <span class="old-price">De R$ 39,90</span>
+                <span class="new-price">R$ 18,90</span>
+                <span class="frete-gratis">🚚 FRETE GRÁTIS</span>
             </div>
 
-            <a href="https://ambienteseguro.org.ua/c/005b0a609a" class="btn-buy">
-                PEDIR AGORA
+            <a href="https://ambienteseguro.org.ua/c/005b0a609a" class="cta-button">
+                QUERO MEU AÇAÍ AGORA!
             </a>
 
-            <div class="payment-methods">
-                <img src="https://logodownload.org/wp-content/uploads/2019/09/pix-logo-2.png" width="50" alt="Pix">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1200px-Mastercard_2019_logo.svg.png" width="30" alt="Mastercard">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" width="40" alt="Visa">
+            <div class="security-box">
+                <div class="security-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2545/2545808.png" alt="Seguro">
+                    <br>Pagamento Criptografado
+                </div>
+                <div class="security-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4481/4481201.png" alt="Entrega">
+                    <br>Entrega Monitorada
+                </div>
+                <div class="security-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6451/6451000.png" alt="Original">
+                    <br>Satisfação Garantida
+                </div>
             </div>
 
-            <div class="footer-text">
-                *Ao clicar em comprar, você será redirecionado para a nossa página de identificação e pagamento seguro para processar o seu pedido.
-            </div>
+            <p style="font-size: 12px; color: #888; margin-top: 20px;">
+                📍 Oferta válida para São José dos Campos e região enquanto durar o estoque diário.
+            </p>
+        </div>
+
+        <div class="footer">
+            © 2026 Sanja Açaí Delivery<br>
+            Ambiente 100% Seguro e Homologado
         </div>
     </div>
 
