@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Exclusiva - Sanja Açaí</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4b0082; /* Roxo Açaí */
+            --secondary: #ffcc00; /* Amarelo Oferta */
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        .header {
+            background-color: var(--primary);
+            padding: 20px;
+            color: var(--text);
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        .badge {
+            background-color: var(--secondary);
+            color: #000;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            font-weight: 900;
+            color: var(--primary);
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .price-tag {
+            font-size: 48px;
+            font-weight: 900;
+            color: #e60000;
+            margin: 10px 0;
+        }
+
+        .price-tag span {
+            font-size: 20px;
+            text-decoration: line-through;
+            color: #888;
+            font-weight: normal;
+        }
+
+        .features {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .feature-item::before {
+            content: '✅';
+            margin-right: 10px;
+        }
+
+        .cta-button {
+            background-color: #25d366; /* Verde WhatsApp/Sucesso */
+            color: white;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            display: block;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.2s;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #888;
+            padding-bottom: 20px;
+        }
+
+        .shipping-alert {
+            color: #2ecc71;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="badge">Oferta Limitada para SJC 📍</div>
+        <div style="font-size: 20px; font-weight: bold;">SANJA AÇAÍ</div>
+    </div>
+
+    <div class="container">
+        <h1>Combo Duplo Gigante (1.4 Litros)</h1>
+        
+        <img src="https://via.placeholder.com/500x500.png?text=FOTO+DOS+2+ACAIS+700ML" alt="2 Açaís de 700ml" class="hero-image">
+
+        <div class="price-tag">
+            <span>De R$ 45,00</span><br>
+            R$ 18,90
+        </div>
+        
+        <p class="shipping-alert">🚚 FRETE GRÁTIS EM SÃO JOSÉ DOS CAMPOS</p>
+
+        <div class="features">
+            <div class="feature-item"><strong>2 Copos de 700ml</strong> (Total 1.4L)</div>
+            <div class="feature-item">Acompanhamentos Selecionados</div>
+            <div class="feature-item">Entrega Rápida e Gelada</div>
+            <div class="feature-item">Promoção válida apenas hoje!</div>
+        </div>
+
+        <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="cta-button">
+            QUERO MEU COMBO AGORA!
+        </a>
+
+        <p style="font-size: 13px; margin-top: 15px;">🔒 Identificação segura e pedido rápido.</p>
+    </div>
+
+    <div class="footer">
+        © 2026 Sanja Açaí Delivery - São José dos Campos/SP
+    </div>
+
+</body>
+</html>
