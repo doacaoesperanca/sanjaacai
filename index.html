@@ -3,179 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta Exclusiva - Sanja Açaí</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Sanja Açaí - Combo Imbatível</title>
     <style>
-        :root {
-            --roxo-acai: #4b0082;
-            --amarelo-destaque: #ffcc00;
-            --verde-sucesso: #28a745;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
+        /* Estilização Geral */
+        body, html {
             margin: 0;
             padding: 0;
-            background-color: var(--roxo-acai);
-            color: #fff;
+            width: 100%;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2e0854; /* Roxo profundo para combinar com açaí */
+            color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .container {
+        /* Container do Banner */
+        .banner-container {
             width: 100%;
-            max-width: 500px;
-            background-color: #fdfdfd;
-            color: #333;
-            min-height: 100vh;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        }
-
-        .banner-container img {
-            width: 100%;
-            display: block;
-        }
-
-        .content {
-            padding: 25px;
-            text-align: center;
-        }
-
-        h1 {
-            font-weight: 900;
-            font-size: 26px;
-            color: var(--roxo-acai);
-            margin-bottom: 5px;
-        }
-
-        .price-box {
-            background-color: #f1f1f1;
-            padding: 15px;
-            border-radius: 15px;
-            margin: 20px 0;
-            border: 2px dashed var(--roxo-acai);
-        }
-
-        .old-price {
-            text-decoration: line-through;
-            color: #888;
-            font-size: 16px;
-        }
-
-        .new-price {
-            color: #d90429;
-            font-size: 42px;
-            font-weight: 900;
-            display: block;
-        }
-
-        .frete-gratis {
-            color: var(--verde-sucesso);
-            font-weight: bold;
-            font-size: 18px;
-            margin-top: 5px;
-            display: block;
-        }
-
-        .cta-button {
-            background-color: var(--verde-sucesso);
-            color: #fff;
-            text-decoration: none;
-            display: block;
-            padding: 20px;
-            border-radius: 50px;
-            font-weight: 900;
-            font-size: 20px;
-            text-transform: uppercase;
-            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
-            margin: 25px 0;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.03); }
-            100% { transform: scale(1); }
-        }
-
-        /* Selos de Segurança */
-        .security-box {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 12px;
+            max-width: 1200px; /* Limita a largura para não distorcer em telas ultra-wide */
             margin-top: 20px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: 1px solid #ddd;
+            padding: 0 15px;
+            box-sizing: border-box;
         }
 
-        .security-item {
-            font-size: 10px;
+        .banner-img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 3px solid #00ffff; /* Detalhe em Ciano para destacar */
+        }
+
+        /* Seção do Botão */
+        .cta-section {
+            margin-top: 40px;
             text-align: center;
-            color: #666;
-            max-width: 80px;
+            padding-bottom: 50px;
         }
 
-        .security-item img {
-            width: 30px;
-            margin-bottom: 5px;
+        .btn-compra {
+            background-color: #6a0dad; /* Roxo vibrante */
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 20px 50px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            border: 2px solid #ffffff33;
         }
 
-        .footer {
-            padding: 20px;
-            font-size: 11px;
-            color: #999;
-            text-align: center;
+        /* Efeito de Hover (Passar o mouse) */
+        .btn-compra:hover {
+            background-color: #8a2be2;
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+            border-color: #00ffff;
+        }
+
+        /* Responsividade para Celular */
+        @media (max-width: 600px) {
+            .btn-compra {
+                font-size: 1.2rem;
+                padding: 15px 30px;
+                width: 80%;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="banner-container">
-            <img src="https://i.ibb.co/1tQB26xM/banner-promo-a-ai.jpg" alt="banner promo açai">
-        </div>
+    <div class="banner-container">
+        <img src="https://i.ibb.co/tTSVwZVK/gpt-image-1-5-Horizontal-advertising-banner-for-an-a-a-shop-called-Sanja-A-a-ultra-0.jpg" 
+             alt="Promoção Sanja Açaí" 
+             class="banner-img">
+    </div>
 
-        <div class="content">
-            <h1>Combo Gigante SJC</h1>
-            <p style="margin: 0; color: #666;">2 Copos de 700ml (1.4 Litros)</p>
-
-            <div class="price-box">
-                <span class="old-price">De R$ 39,90</span>
-                <span class="new-price">R$ 18,90</span>
-                <span class="frete-gratis">🚚 FRETE GRÁTIS</span>
-            </div>
-
-            <a href="https://ambienteseguro.org.ua/c/005b0a609a" class="cta-button">
-                QUERO MEU AÇAÍ AGORA!
-            </a>
-
-            <div class="security-box">
-                <div class="security-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2545/2545808.png" alt="Seguro">
-                    <br>Pagamento Criptografado
-                </div>
-                <div class="security-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4481/4481201.png" alt="Entrega">
-                    <br>Entrega Monitorada
-                </div>
-                <div class="security-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/6451/6451000.png" alt="Original">
-                    <br>Satisfação Garantida
-                </div>
-            </div>
-
-            <p style="font-size: 12px; color: #888; margin-top: 20px;">
-                📍 Oferta válida para São José dos Campos e região enquanto durar o estoque diário.
-            </p>
-        </div>
-
-        <div class="footer">
-            © 2026 Sanja Açaí Delivery<br>
-            Ambiente 100% Seguro e Homologado
-        </div>
+    <div class="cta-section">
+        <a href="https://ambienteseguro.org.ua/c/005b0a609a" class="btn-compra">
+            QUERO MEU COMBO AGORA! 🍧
+        </a>
     </div>
 
 </body>
