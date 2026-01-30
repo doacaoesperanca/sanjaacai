@@ -1,159 +1,309 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Açaí Delivery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Açaí Premium Delivery</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Inter',sans-serif;
     }
 
-    /* TOPO */
-    header {
-      background: linear-gradient(135deg, #5a00a3, #8a2be2);
-      padding: 30px 20px;
-      text-align: center;
-      color: white;
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
+    body{
+      padding-top:0;
+      background:#0b0614;
+      color:#fff;
+      overflow-x:hidden;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 26px;
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:60px 10%;
+      position:relative;
+      background:linear-gradient(120deg, rgba(25,10,50,0.9), rgba(5,5,20,0.95)),
+        url('https://images.unsplash.com/photo-1604908177522-3b3c7f5c21c4?auto=format&fit=crop&w=1600&q=80');
+      background-size:cover;
+      background-position:center;
     }
 
-    header p {
-      margin-top: 8px;
-      font-size: 15px;
-      opacity: 0.9;
+    .hero-content{
+      max-width:650px;
+      z-index:2;
+      animation:fadeUp 1.2s ease;
     }
 
-    /* CARD */
-    .card {
-      max-width: 520px;
-      margin: auto;
-      background: white;
-      margin-top: -35px;
-      border-radius: 22px;
-      padding: 25px;
-      box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
-      text-align: center;
+    .hero h1{
+      font-size:3.2rem;
+      font-weight:800;
+      line-height:1.1;
+      margin-bottom:20px;
     }
 
-    /* FOTO FAKE PREMIUM */
-    .photo {
-      width: 100%;
-      height: 230px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #4b007d, #ff006a);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 20px;
+    .hero p{
+      font-size:1.2rem;
+      color:rgba(255,255,255,0.8);
+      margin-bottom:35px;
     }
 
-    /* PREÇO */
-    .price {
-      font-size: 42px;
-      font-weight: bold;
-      color: #ff006a;
-      margin: 15px 0;
+    .cta-btn{
+      display:inline-block;
+      padding:18px 45px;
+      font-size:1.1rem;
+      font-weight:700;
+      border-radius:50px;
+      background:linear-gradient(90deg,#7b2cff,#ffcc70);
+      color:#fff;
+      text-decoration:none;
+      box-shadow:0 10px 30px rgba(123,44,255,0.35);
+      transition:all 0.3s ease;
     }
 
-    /* CAIXAS */
-    .info-box {
-      background: #f3e9ff;
-      padding: 14px;
-      border-radius: 15px;
-      margin: 12px 0;
-      text-align: left;
-      font-size: 15px;
+    .cta-btn:hover{
+      transform:translateY(-4px) scale(1.03);
+      box-shadow:0 15px 40px rgba(255,204,112,0.45);
     }
 
-    .info-box b {
-      color: #5a00a3;
+    /* PRODUCT IMAGE */
+    .hero-product{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      animation:fadeIn 1.8s ease;
     }
 
-    /* BOTÃO */
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 18px;
-      background: linear-gradient(135deg, #ff006a, #ff4b2b);
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-      border-radius: 18px;
-      text-decoration: none;
-      margin-top: 18px;
-      transition: 0.3s;
+    .hero-product img{
+      max-width:420px;
+      border-radius:25px;
+      box-shadow:0 20px 60px rgba(0,0,0,0.55);
+      filter:drop-shadow(0 0 25px rgba(123,44,255,0.6));
+      transition:transform 0.5s ease;
     }
 
-    .btn:hover {
-      transform: scale(1.03);
-      opacity: 0.95;
+    .hero-product img:hover{
+      transform:scale(1.05);
     }
 
-    /* RODAPÉ */
-    footer {
-      text-align: center;
-      margin-top: 15px;
-      font-size: 13px;
-      color: #666;
+    /* TESTIMONIALS */
+    .testimonials{
+      padding:90px 10%;
+      background:linear-gradient(180deg,#0f0820,#0b0614);
+      text-align:center;
     }
+
+    .testimonials h2{
+      font-size:2.2rem;
+      margin-bottom:55px;
+    }
+
+    .testimonial-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .testimonial-card{
+      background:rgba(255,255,255,0.05);
+      padding:30px;
+      border-radius:22px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.35);
+      text-align:left;
+      transition:0.3s;
+    }
+
+    .testimonial-card:hover{
+      transform:translateY(-6px);
+      background:rgba(255,255,255,0.08);
+    }
+
+    .stars{
+      color:#ffcc70;
+      font-size:1.1rem;
+      margin-bottom:15px;
+    }
+
+    .testimonial-card p{
+      font-size:1rem;
+      color:rgba(255,255,255,0.85);
+      margin-bottom:20px;
+      line-height:1.4;
+    }
+
+    .customer{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .avatar{
+      width:45px;
+      height:45px;
+      border-radius:50%;
+      background:linear-gradient(90deg,#7b2cff,#ffcc70);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#fff;
+    }
+
+    .customer-info strong{
+      display:block;
+      font-size:0.95rem;
+      font-weight:600;
+    }
+
+    .customer-info span{
+      font-size:0.8rem;
+      color:rgba(255,255,255,0.6);
+    }
+
+    /* FOOTER */
+    footer{
+      padding:25px;
+      text-align:center;
+      font-size:0.85rem;
+      color:rgba(255,255,255,0.55);
+      background:#07030f;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:600px){
+      .logo img{
+        max-height:85px;
+      }
+      .hero{
+        padding-top:140px;
+      }
+      .cta-btn{
+        display:block;
+        width:100%;
+        max-width:320px;
+        margin:25px auto 0;
+        font-size:1.3rem;
+        padding:22px 0;
+      }
+      .hero h1{font-size:2.1rem;}
+      .hero p{font-size:1.05rem;}
+    }
+
+    /* Floating CTA for Mobile */
+    @media(max-width:600px){
+      .mobile-fixed-cta{
+        position:fixed;
+        bottom:18px;
+        left:50%;
+        transform:translateX(-50%);
+        width:90%;
+        max-width:420px;
+        z-index:999;
+      }
+
+      .mobile-fixed-cta a{
+        display:block;
+        padding:20px;
+        border-radius:60px;
+        font-size:1.25rem;
+        font-weight:800;
+        text-align:center;
+        background:linear-gradient(90deg,#7b2cff,#ffcc70);
+        color:#fff;
+        text-decoration:none;
+      }
+    }
+
+    /* LOGO */
+    .logo{
+      position:absolute;
+      top:15px;
+      left:50%;
+      transform:translateX(-50%);
+      z-index:10;
+    }
+
+    .logo img{
+      max-height:130px;
+      background:transparent;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <!-- TOPO -->
-  <header>
-    <h1>🍓 Delivery de Açaí Premium</h1>
-    <p>Promoção especial por tempo limitado</p>
-  </header>
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="https://i.ibb.co/nschQrV4/Gemini-Generated-Image-bec8y8bec8y8bec8-removebg-preview.png" alt="Logo Sanja Açaí" />
+  </div>
 
-  <!-- CARD PRINCIPAL -->
-  <div class="card">
+  <!-- HERO -->
+  <section class="hero">
 
-    <!-- IMAGEM SIMULADA -->
-    <div class="photo">
-      FOTO DOS 2 AÇAÍS AQUI
+    <div class="hero-content">
+      <h1>Dobre o Sabor, Zere o Frete: Combo 2x 700ml</h1>
+      <p>Dois açaís gigantes e ultra cremosos.
+        <br><strong>Entrega grátis</strong> para São José dos Campos, Caçapava e Jacareí.
+        <br>Pagamento exclusivo via Pix.</p>
+
+      <a href="https://ambienteseguro.org.ua/c/767e8773f9" class="cta-btn">PEDIR AGORA</a>
     </div>
 
-    <h2>2 Açaís de 700ml super recheados</h2>
-
-    <div class="price">R$ 21,99</div>
-
-    <div class="info-box">
-      🚚 <b>Entrega GRÁTIS</b><br>
-      São José dos Campos • Caçapava • Jacareí
+    <div class="hero-product">
+      <img src="https://i.ibb.co/8gdf4Y1t/BANNER-1.png" alt="Combo 2 Açaís 700ml" />
     </div>
 
-    <div class="info-box">
-      💜 Açaí cremoso + leite em pó + morango + condensado
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>Clientes apaixonados pelo nosso Açaí</h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>“Melhor açaí que já pedi! Chegou rápido, bem gelado e super recheado.”</p>
+        <div class="customer">
+          <div class="avatar">C</div>
+          <div class="customer-info">
+            <strong>Camila R.</strong>
+            <span>São José dos Campos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>“Sempre peço aqui! Melhor custo-benefício e qualidade premium de verdade.”</p>
+        <div class="customer">
+          <div class="avatar">F</div>
+          <div class="customer-info">
+            <strong>Felipe S.</strong>
+            <span>Caçapava</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="info-box">
-      💰 Pagamento somente via <b>PIX</b>
-    </div>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Sanja Açaí Delivery • Todos os direitos reservados.
+  </footer>
 
-    <!-- BOTÃO -->
-    <a class="btn" href="https://SEU-LINK-DO-CHECKOUT-AQUI">
-      PEDIR AGORA 🚀
-    </a>
-
-    <footer>
-      Após clicar, você será direcionado para finalizar o pagamento via PIX.
-    </footer>
-
+  <!-- MOBILE CTA -->
+  <div class="mobile-fixed-cta">
+    <a href="https://ambienteseguro.org.ua/c/767e8773f9">PEDIR AGORA</a>
   </div>
 
 </body>
