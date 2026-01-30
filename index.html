@@ -29,4 +29,132 @@
 
     header p {
       margin-top: 8px;
-      font-siz
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    /* CARD */
+    .card {
+      max-width: 520px;
+      margin: auto;
+      background: white;
+      margin-top: -35px;
+      border-radius: 22px;
+      padding: 25px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    /* FOTO FAKE PREMIUM */
+    .photo {
+      width: 100%;
+      height: 230px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #4b007d, #ff006a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* PREÇO */
+    .price {
+      font-size: 42px;
+      font-weight: bold;
+      color: #ff006a;
+      margin: 15px 0;
+    }
+
+    /* CAIXAS */
+    .info-box {
+      background: #f3e9ff;
+      padding: 14px;
+      border-radius: 15px;
+      margin: 12px 0;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    .info-box b {
+      color: #5a00a3;
+    }
+
+    /* BOTÃO */
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      background: linear-gradient(135deg, #ff006a, #ff4b2b);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 18px;
+      text-decoration: none;
+      margin-top: 18px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.03);
+      opacity: 0.95;
+    }
+
+    /* RODAPÉ */
+    footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOPO -->
+  <header>
+    <h1>🍓 Delivery de Açaí Premium</h1>
+    <p>Promoção especial por tempo limitado</p>
+  </header>
+
+  <!-- CARD PRINCIPAL -->
+  <div class="card">
+
+    <!-- IMAGEM SIMULADA -->
+    <div class="photo">
+      FOTO DOS 2 AÇAÍS AQUI
+    </div>
+
+    <h2>2 Açaís de 700ml super recheados</h2>
+
+    <div class="price">R$ 21,99</div>
+
+    <div class="info-box">
+      🚚 <b>Entrega GRÁTIS</b><br>
+      São José dos Campos • Caçapava • Jacareí
+    </div>
+
+    <div class="info-box">
+      💜 Açaí cremoso + leite em pó + morango + condensado
+    </div>
+
+    <div class="info-box">
+      💰 Pagamento somente via <b>PIX</b>
+    </div>
+
+    <!-- BOTÃO -->
+    <a class="btn" href="https://SEU-LINK-DO-CHECKOUT-AQUI">
+      PEDIR AGORA 🚀
+    </a>
+
+    <footer>
+      Após clicar, você será direcionado para finalizar o pagamento via PIX.
+    </footer>
+
+  </div>
+
+</body>
+</html>
