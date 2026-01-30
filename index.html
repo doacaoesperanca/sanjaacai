@@ -3,134 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Promoção Açaí Delivery</title>
+  <title>Açaí Delivery Premium</title>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4b007d, #ffffff);
-      color: #222;
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f6f6f6;
+    }
+
+    .top-banner {
+      background: linear-gradient(135deg, #5a00a3, #8a2be2);
+      padding: 25px;
+      color: white;
       text-align: center;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    .top-banner h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .top-banner p {
+      margin-top: 8px;
+      font-size: 15px;
+      opacity: 0.9;
     }
 
     .container {
-      max-width: 500px;
+      max-width: 520px;
       margin: auto;
-      padding: 20px;
+      padding: 18px;
     }
 
-    .card {
+    .product-card {
       background: white;
-      border-radius: 20px;
-      padding: 25px;
-      box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
-      margin-top: 30px;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
+      margin-top: -40px;
     }
 
-    h1 {
-      color: #4b007d;
-      font-size: 28px;
-      margin-bottom: 10px;
+    .product-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .content {
+      padding: 22px;
+      text-align: center;
+    }
+
+    .content h2 {
+      margin: 0;
+      font-size: 22px;
+      color: #3a005f;
     }
 
     .price {
-      font-size: 38px;
+      font-size: 42px;
       font-weight: bold;
-      color: #ff0077;
-      margin: 15px 0;
+      color: #ff006a;
+      margin: 12px 0;
     }
 
-    .subtitle {
-      font-size: 18px;
+    .badge {
+      display: inline-block;
+      background: #5a00a3;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 50px;
+      font-size: 14px;
       margin-bottom: 15px;
     }
 
-    .info-box {
-      background: #f5f0ff;
-      border-left: 6px solid #4b007d;
-      padding: 12px;
-      border-radius: 10px;
+    .info {
       text-align: left;
-      margin: 15px 0;
+      margin-top: 15px;
+    }
+
+    .info-box {
+      background: #f3e9ff;
+      padding: 14px;
+      border-radius: 15px;
+      margin-bottom: 12px;
       font-size: 15px;
+    }
+
+    .info-box b {
+      color: #5a00a3;
     }
 
     .btn {
       display: block;
       width: 100%;
       padding: 18px;
-      background: #4b007d;
+      background: linear-gradient(135deg, #ff006a, #ff4b2b);
       color: white;
       font-size: 20px;
       font-weight: bold;
       border: none;
-      border-radius: 15px;
-      cursor: pointer;
-      text-decoration: none;
-      margin-top: 20px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #35005c;
-      transform: scale(1.03);
-    }
-
-    .footer {
-      margin-top: 20px;
-      font-size: 13px;
-      color: #444;
-    }
-
-    .highlight {
-      color: #4b007d;
-      font-weight: bold;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="container">
-
-    <div class="card">
-
-      <h1>🍓 Promoção Imperdível!</h1>
-      <p class="subtitle">
-        Dois copos de <span class="highlight">Açaí 700ml</span> super recheados!
-      </p>
-
-      <div class="price">R$ 21,99</div>
-
-      <div class="info-box">
-        ✅ <b>Entrega GRÁTIS</b> para:<br>
-        📍 São José dos Campos<br>
-        📍 Caçapava<br>
-        📍 Jacareí
-      </div>
-
-      <div class="info-box">
-        ⚡ Promoção válida por tempo limitado<br>
-        💜 Açaí cremoso + leite em pó + morango + condensado
-      </div>
-
-      <div class="info-box">
-        💰 Pagamento aceito somente via <b>PIX</b>
-      </div>
-
-      <!-- BOTÃO CHECKOUT -->
-      <a class="btn" href="https://SEU-LINK-DO-CHECKOUT-AQUI">
-        QUERO PEDIR AGORA 🚀
-      </a>
-
-      <p class="footer">
-        Após clicar, você será direcionado para o pagamento via PIX.
-      </p>
-
-    </div>
-
-  </div>
-
-</body>
-</html>
+      border-radius:
