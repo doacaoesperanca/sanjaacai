@@ -1,95 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanja Açaí - Combo Imbatível</title>
-    <style>
-        /* Estilização Geral */
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #2e0854; /* Roxo profundo para combinar com açaí */
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoção Açaí Delivery</title>
 
-        /* Container do Banner */
-        .banner-container {
-            width: 100%;
-            max-width: 1200px; /* Limita a largura para não distorcer em telas ultra-wide */
-            margin-top: 20px;
-            padding: 0 15px;
-            box-sizing: border-box;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4b007d, #ffffff);
+      color: #222;
+      text-align: center;
+    }
 
-        .banner-img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            border: 3px solid #00ffff; /* Detalhe em Ciano para destacar */
-        }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+    }
 
-        /* Seção do Botão */
-        .cta-section {
-            margin-top: 40px;
-            text-align: center;
-            padding-bottom: 50px;
-        }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+      margin-top: 30px;
+    }
 
-        .btn-compra {
-            background-color: #6a0dad; /* Roxo vibrante */
-            color: white;
-            text-decoration: none;
-            font-size: 1.5rem;
-            font-weight: bold;
-            padding: 20px 50px;
-            border-radius: 50px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            display: inline-block;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            border: 2px solid #ffffff33;
-        }
+    h1 {
+      color: #4b007d;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
 
-        /* Efeito de Hover (Passar o mouse) */
-        .btn-compra:hover {
-            background-color: #8a2be2;
-            transform: scale(1.05);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-            border-color: #00ffff;
-        }
+    .price {
+      font-size: 38px;
+      font-weight: bold;
+      color: #ff0077;
+      margin: 15px 0;
+    }
 
-        /* Responsividade para Celular */
-        @media (max-width: 600px) {
-            .btn-compra {
-                font-size: 1.2rem;
-                padding: 15px 30px;
-                width: 80%;
-            }
-        }
-    </style>
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .info-box {
+      background: #f5f0ff;
+      border-left: 6px solid #4b007d;
+      padding: 12px;
+      border-radius: 10px;
+      text-align: left;
+      margin: 15px 0;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      background: #4b007d;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #35005c;
+      transform: scale(1.03);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #444;
+    }
+
+    .highlight {
+      color: #4b007d;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
 
-    <div class="banner-container">
-        <img src="https://i.ibb.co/tTSVwZVK/gpt-image-1-5-Horizontal-advertising-banner-for-an-a-a-shop-called-Sanja-A-a-ultra-0.jpg" 
-             alt="Promoção Sanja Açaí" 
-             class="banner-img">
+  <div class="container">
+
+    <div class="card">
+
+      <h1>🍓 Promoção Imperdível!</h1>
+      <p class="subtitle">
+        Dois copos de <span class="highlight">Açaí 700ml</span> super recheados!
+      </p>
+
+      <div class="price">R$ 21,99</div>
+
+      <div class="info-box">
+        ✅ <b>Entrega GRÁTIS</b> para:<br>
+        📍 São José dos Campos<br>
+        📍 Caçapava<br>
+        📍 Jacareí
+      </div>
+
+      <div class="info-box">
+        ⚡ Promoção válida por tempo limitado<br>
+        💜 Açaí cremoso + leite em pó + morango + condensado
+      </div>
+
+      <div class="info-box">
+        💰 Pagamento aceito somente via <b>PIX</b>
+      </div>
+
+      <!-- BOTÃO CHECKOUT -->
+      <a class="btn" href="https://SEU-LINK-DO-CHECKOUT-AQUI">
+        QUERO PEDIR AGORA 🚀
+      </a>
+
+      <p class="footer">
+        Após clicar, você será direcionado para o pagamento via PIX.
+      </p>
+
     </div>
 
-    <div class="cta-section">
-        <a href="https://ambienteseguro.org.ua/c/005b0a609a" class="btn-compra">
-            QUERO MEU COMBO AGORA! 🍧
-        </a>
-    </div>
+  </div>
 
 </body>
 </html>
